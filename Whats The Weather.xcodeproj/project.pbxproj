@@ -14,6 +14,7 @@
 		429320EF1BB1B3AD0072B52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429320ED1BB1B3AD0072B52C /* LaunchScreen.storyboard */; };
 		429320FA1BB1B3AD0072B52C /* Whats_The_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429320F91BB1B3AD0072B52C /* Whats_The_WeatherTests.swift */; };
 		429321051BB1B3AD0072B52C /* Whats_The_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429321041BB1B3AD0072B52C /* Whats_The_WeatherUITests.swift */; };
+		429321131BB1B5B40072B52C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 429321121BB1B5B40072B52C /* background.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		429321001BB1B3AD0072B52C /* Whats The WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Whats The WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		429321041BB1B3AD0072B52C /* Whats_The_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whats_The_WeatherUITests.swift; sourceTree = "<group>"; };
 		429321061BB1B3AD0072B52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429321121BB1B5B40072B52C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		429320E31BB1B3AC0072B52C /* Whats The Weather */ = {
 			isa = PBXGroup;
 			children = (
+				429321121BB1B5B40072B52C /* background.png */,
 				429320E41BB1B3AC0072B52C /* AppDelegate.swift */,
 				429320E61BB1B3AD0072B52C /* ViewController.swift */,
 				429320E81BB1B3AD0072B52C /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				429320EF1BB1B3AD0072B52C /* LaunchScreen.storyboard in Resources */,
+				429321131BB1B5B40072B52C /* background.png in Resources */,
 				429320EC1BB1B3AD0072B52C /* Assets.xcassets in Resources */,
 				429320EA1BB1B3AD0072B52C /* Main.storyboard in Resources */,
 			);
