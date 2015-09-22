@@ -20,19 +20,83 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="q8z-yg-pd3">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0O-em-a1D">
+                                <rect key="frame" x="226" y="230" width="148" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mgE-8I-tVR"/>
+                                    <constraint firstAttribute="width" constant="148" id="t1A-y6-Kcx"/>
+                                </constraints>
+                                <state key="normal" title="What's The Weather?"/>
+                                <connections>
+                                    <action selector="whatsTheWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLy-WC-Daw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-LZ-Arx">
+                                <rect key="frame" x="151" y="43" width="298" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hwX-so-dqc"/>
+                                    <constraint firstAttribute="width" constant="298" id="raR-Ql-Dxo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a city..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHj-hP-P4v">
+                                <rect key="frame" x="233" y="125" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="5KW-ig-Gxj"/>
+                                    <constraint firstAttribute="height" constant="21" id="GJE-YP-p1a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. London, San Francisco" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-fs-P4R">
+                                <rect key="frame" x="151" y="170" width="298" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0AB-NL-bVK"/>
+                                    <constraint firstAttribute="width" constant="298" id="IaH-4M-aNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="rCk-SY-0dR">
+                                <rect key="frame" x="151" y="288" width="298" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="QCq-YZ-Qpz"/>
+                                    <constraint firstAttribute="width" constant="298" id="rfR-nr-ciV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fYD-fs-P4R" firstAttribute="top" secondItem="zHj-hP-P4v" secondAttribute="bottom" constant="24" id="7gm-9S-8DQ"/>
+                            <constraint firstItem="7KH-LZ-Arx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="Gtg-oW-eEt"/>
+                            <constraint firstItem="zHj-hP-P4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I1W-TJ-Nwl"/>
                             <constraint firstItem="q8z-yg-pd3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="N3I-ga-v98"/>
+                            <constraint firstItem="w0O-em-a1D" firstAttribute="top" secondItem="fYD-fs-P4R" secondAttribute="bottom" constant="30" id="PK5-WZ-nmK"/>
+                            <constraint firstItem="rCk-SY-0dR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R1t-x6-lXK"/>
+                            <constraint firstItem="w0O-em-a1D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acQ-JO-FNs"/>
+                            <constraint firstItem="rCk-SY-0dR" firstAttribute="top" secondItem="w0O-em-a1D" secondAttribute="bottom" constant="28" id="cim-B9-IKa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q8z-yg-pd3" secondAttribute="bottom" id="f2g-DY-utJ"/>
+                            <constraint firstItem="zHj-hP-P4v" firstAttribute="top" secondItem="7KH-LZ-Arx" secondAttribute="bottom" constant="46" id="fi2-55-SmH"/>
                             <constraint firstItem="q8z-yg-pd3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iSv-Un-7D2"/>
+                            <constraint firstItem="fYD-fs-P4R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="irL-8k-3ei"/>
+                            <constraint firstItem="7KH-LZ-Arx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUo-Mg-D2n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q8z-yg-pd3" secondAttribute="trailing" constant="-20" id="nj2-38-Hl2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="fYD-fs-P4R" id="Jdb-xZ-Q1a"/>
+                        <outlet property="resultLabel" destination="rCk-SY-0dR" id="2p7-1e-bGC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="356"/>
+            <point key="canvasLocation" x="416" y="373"/>
         </scene>
     </scenes>
     <resources>
